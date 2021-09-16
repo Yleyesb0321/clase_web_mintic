@@ -4,10 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+      <!-- Para colocar el icono de la pagina -->
+    <link rel="shortcut icon" href="imgs/digitization-5231610_640.jpg" type="image/x-icon">
+
+    <title>Clase_1 53423</title>
 </head>
 <body>
-    <h1>Estamos aquí</h1>
-    <a href="index.html">Regresar</a>
+  <header>
+    <h1>Ejemplo Formulario</h1>
+    <img src="imgs/imagen-destacada_diseno-web.jpg" alt="" width="200" height="150">
+    <br><br>
+  </header>
+  <section>
+    <form action="">
+      <fieldset>
+        <legend>Formulario 1</legend><br><br>
+        <label for="nombre">Nombre:
+          <input id="nombre" type="text" maxlength="12" placeholder="Solo 12 caracteres"
+          value="Yecid" readonly>
+        </label>
+        <br><br>
+    
+        <label for="CC">Documento:
+          <input id="CC" type="text" placeholder="Documento Identidad" value="1234567890">
+        </label>
+        <br><br>
+    
+        <!-- range -->
+        <label for="edad">Edad: 
+          <input type="range" name="" id="edad" min="18" max="70">
+        </label>
+        <br><br>
+    
+        <!-- Number -->
+        <label for="tiempo">Tiempo en Empresa: 
+          <input type="number" name="" id="tiempo" min="1" max="20" value="2" step="4">
+        </label>
+        <br><br>
+    
+        <!-- Clave -->
+        <label for="clave">Contraseña:
+          <input type="password" name="" id="clave">
+        </label>
+        <br><br>
+    
+        <!-- Fecha -->
+        <label for="fecha">Fecha:
+          <input type="date" name="" id="fecha" min="2020-01-31" max="2021-12-31">
+        </label>
+        <br><br>
+    
+        <!-- Color -->
+        <label for="color">Color:
+          <input type="color" name="" id="color">
+        </label>
+        <br><br>
+    
+        <!-- Correo -->
+        <label for="email">Correo:
+          <input type="email" name="" id="email" value="usuario@ejemplo.com" required>
+        </label>
+        <br><br>
+    
+        <!-- Subir Archivos -->
+        <label for="archivo">Adjuntar Archivos:
+          <input type="file" name="" id="archivo" multiple>
+        </label>
+      </fieldset>
+      <br>
+
+      <!-- Botones -->
+      <input type="button" value="Enviar"><!--button-->
+      <input type="submit" value="Enviar 2"><!--submit envia el formulario-->
+      <input type="reset" value="Borrar formulario">
+    </form>
+  </section>
+  <br><br>
+  <hr>
+  <a href="index.html">Regresar</a>
 </body>
 </html>
