@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
 
       <!-- Para colocar el icono de la pagina -->
     <link rel="shortcut icon" href="imgs/digitization-5231610_640.jpg" type="image/x-icon">
@@ -18,6 +19,7 @@
   </header>
   <section>
     <form action="">
+      <input type="hidden" value="1234567890">
       <fieldset>
         <legend>Formulario 1</legend><br><br>
         <label for="nombre">Nombre:
@@ -45,7 +47,7 @@
     
         <!-- Clave -->
         <label for="clave">Contraseña:
-          <input type="password" name="" id="clave">
+          <input type="password" name="" id="clave" required>
         </label>
         <br><br>
     
@@ -63,7 +65,13 @@
     
         <!-- Correo -->
         <label for="email">Correo:
-          <input type="email" name="" id="email" value="usuario@ejemplo.com" required>
+          <input type="email" name="" id="email" placeholder="usuario@ejemplo.com" required>
+        </label>
+        <br><br>
+
+        <!-- Confirmacion correo -->
+        <label for="email1">Confirmar Correo:
+          <input type="email" name="email" id="email1" placeholder="debe tener @" required>
         </label>
         <br><br>
     
@@ -78,9 +86,93 @@
       <input type="button" value="Enviar"><!--button-->
       <input type="submit" value="Enviar 2"><!--submit envia el formulario-->
       <input type="reset" value="Borrar formulario">
+      <br><br><br>
+
+      <fieldset>
+        <legend>Formulario 2</legend><br>
+        <h3>Ciudad</h3>
+        <select name="" id="">
+          <option value="1">Duitama</option>
+          <option value="2">Sogamoso</option>
+          <option value="3">Tunja</option>
+          <option value="4">Paipa</option>
+        </select>
+        <br><br>
+
+        <!-- Radio Button -->
+        <h3>Radio Button</h3>
+        <label for="">
+          <input type="radio" name="estado_civil">
+          Casado
+        </label>
+        <label for="">
+          <input type="radio" name="estado_civil">
+          Soltero
+        </label>
+        <label for="">
+          <input type="radio" name="estado_civil">
+          Divorciado
+        </label>
+        <label for="">
+          <input type="radio" name="estado_civil">
+          Viudo
+        </label>
+        <br><br>
+
+        <!-- Check box -->
+        <h3>Check box</h3>
+        <label for="">
+          <input type="checkbox">
+          Dibujar
+        </label><br>
+        <label for="">
+          <input type="checkbox">
+          Nadar
+        </label><br>
+        <label for="">
+          <input type="checkbox">
+          Cantar
+        </label><br>
+        <label for="">
+          <input type="checkbox">
+          Trotar
+        </label><br>
+        <label for="">
+          <input type="checkbox">
+          Cocinar
+        </label><br>
+        <br>
+
+        <!-- Agregar comentarios -->
+        <h3>Textarea</h3>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <br><br>
+
+        <!-- Creamos un Datalist -->
+        <h3>Lista de Ciudades</h3>
+        <label for="">Ciudad
+          <input type="text" name="Ciudad" list="lista_ciudades">
+          <datalist id="lista_ciudades">
+            <option value="Villa de Leyva">Villa de Leyva</option>
+            <option value="Sotaquira">Sotaquira</option>
+            <option value="Nobsa">Nobsa</option>
+            <option value="Tibasosa">Tibasosa</option>
+            <option value="Raquira">Raquira</option>
+            <option value="Aquitania">Aquitania</option>
+            <option value="Samaca">Samaca</option>
+            <option value="Cómbita">Cómbita</option>
+          </datalist>
+        </label>
+      </fieldset>
+      <br>
+      <!-- Botones -->
+      <input type="button" value="Enviar"><!--button-->
+      <input type="submit" value="Enviar 2"><!--submit envia el formulario-->
+      <input type="reset" value="Borrar formulario">
+      <br>
     </form>
   </section>
-  <br><br>
+  <br>
   <hr>
   <a href="index.html">Regresar</a>
 </body>
