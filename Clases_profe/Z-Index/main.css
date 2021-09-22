@@ -1,0 +1,42 @@
+body{
+  background-color: darkgray;
+}
+#contenedor{
+  position: relative;
+  width: 600px;
+  height: 400px;
+  background: rgb(12, 12, 12);
+  border: 1px solid black;
+}
+h1{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  font-size: 15px;
+  color: blueviolet;
+}
+.circulo{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+.azul{
+  background-color: blue;
+  top: 80px;
+  left: 150px;
+  z-index: 3;
+}
+.rojo{
+  background-color: red;
+  top: 80px;
+  left: 220px;
+  z-index: 2;
+}
+.blanco{
+  background-color: white;
+  top: 80px;
+  left: 300px;
+  z-index: 1;
+}

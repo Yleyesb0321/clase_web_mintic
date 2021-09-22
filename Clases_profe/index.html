@@ -2,7 +2,7 @@
 <html lang="es">
 
 
-<head> 
+<head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,13 +15,40 @@
 </head>
 
 <!-- Colocamos el cuerpo principal body -->
+
 <body>
   <!-- esto es un comentario -->
-  <header> <!--header es el encabezado-->
+  <header>
+    <!--header es el encabezado-->
+    <div class="menu_desplegable">
+      <ul>
+        <li id="item"><a href="#">Inicio</a></li>
+        <li id="item"><a href="#">Servicios</a></li>
+        <li id="item"><a href="#">Quienes Somos</a>
+          <ul id="submenu">
+            <li><a href="#">Nosotros</a> </li>
+            <li><a href="#">Misión</a> </li>
+            <li><a href="#">Visión</a> </li>
+            <li id="li_2"><a href="#">Historia</a>
+              <ul id="submenu_2">
+                <li>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit perferendis minima sint qui aliquid
+                    quasi!</p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li id="item"><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+    <br><br>
+
     <h1>Hola Mundo!...</h1>
   </header>
 
-  <section><!--section es una seccion-->
+  <section>
+    <!--section es una seccion-->
     <h1>Lista ordenada</h1>
     <ol>
       <li>opcion 1</li>
@@ -39,26 +66,30 @@
     </ul>
   </section>
 
-  <main><!--main es lo principal de nuestra pagina-->
+  <main>
+    <!--main es lo principal de nuestra pagina-->
+    <p>
+      Lorem ipsum dolor sit amet <a href="pagina1.html" target="blank">leer mas</a> adipisicing elit. <br> Delectus
+      atque iure officiis
+      quasi et! Iste eaque aliquam reprehenderit tempora fuga!
+    </p>
+    <img src="imgs/pink-wine-1964457_1920.jpg" alt="fiesta rosa" width="500" height="250">
+    <hr>
 
+    <p>Lorem ipsum <strong>dolor sit amet,</strong>consectetur adipisicing elit. Ipsum, dolor sint sit doloribus maiores
+      ratione id
+      minima, delectus pariatur blanditiis earum nostrum voluptatibus eaque sed commodi a aliquid repellendus dolores.
+    </p>
+    <img src="imgs/tablecloth-3336687_1920.jpg" alt="cena" width="500" height="250">
+    <hr>
   </main>
 
-  <footer><!--es el pie de pagina con contacto, derechos, privacidad y demas...-->
+  <footer>
+    <!--es el pie de pagina con contacto, derechos, privacidad y demas...-->
 
   </footer>
 
-  <p>
-    Lorem ipsum dolor sit amet <a href="pagina1.html" target="blank">leer mas</a> adipisicing elit. <br> Delectus atque iure officiis
-    quasi et! Iste eaque aliquam reprehenderit tempora fuga!
-  </p>
-  <img src="imgs/pink-wine-1964457_1920.jpg" alt="fiesta rosa" width="500" height="250">
-  <hr>
 
-  <p>Lorem ipsum <strong>dolor sit amet,</strong>consectetur adipisicing elit. Ipsum, dolor sint sit doloribus maiores ratione id
-    minima, delectus pariatur blanditiis earum nostrum voluptatibus eaque sed commodi a aliquid repellendus dolores.
-  </p>
-  <img src="imgs/tablecloth-3336687_1920.jpg" alt="cena" width="500" height="250">
-  <hr>
 </body>
 
 </html>
